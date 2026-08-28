@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marchita</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: #fff;
+      color: #171717;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      margin: auto;
+      padding: 90px 32px 50px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 58px;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    .profile h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .profile p {
+      font-size: 18px;
+      color: #777;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .link-card {
+      width: 100%;
+      min-height: 108px;
+      display: flex;
+      align-items: center;
+      padding: 18px 26px;
+      text-decoration: none;
+      color: #171717;
+      border: 1px solid #eadcdf;
+      border-radius: 25px;
+      transition: .2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fde8ed;
+      border-radius: 13px;
+      color: #b51f52;
+      font-size: 22px;
+      margin-right: 20px;
+    }
+
+    .link-card span {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      margin-left: auto;
+      color: #666;
+      font-size: 17px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 135px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 70px 32px 40px;
+      }
+
+      .profile img {
+        width: 125px;
+        height: 125px;
+      }
+
+      .profile h1 {
+        font-size: 27px;
+      }
+
+      .link-card {
+        min-height: 108px;
+        padding: 18px 25px;
+      }
+
+      .link-card span {
+        font-size: 16px;
+      }
+
+      footer {
+        margin-top: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <section class="profile">
+      <!-- Ganti URL gambar di bawah dengan foto profil kamu -->
+      <img src="https://placehold.co/260x260/png?text=Foto" alt="Foto profil">
+
+      <h1>marchita</h1>
+      <p>@marchita</p>
+    </section>
+
+    <section class="links">
+
+      <a href="#" class="link-card">
+        <div class="icon">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <span>TMGM(USC)</span>
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+      </a>
+
+      <a href="#" class="link-card">
+        <div class="icon">
+          <i class="fa-regular fa-calendar"></i>
+        </div>
+        <span>TMGM(USD)</span>
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+      </a>
+
+      <a href="#" class="link-card">
+        <div class="icon">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <span>AXION SIGNAL</span>
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+      </a>
+
+      <a href="#" class="link-card">
+        <div class="icon">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <span>CS AXION</span>
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+      </a>
+
+    </section>
+
+    <footer>
+      Dibuat dengan Axion Link
+    </footer>
+
+  </main>
+</body>
+</html>
